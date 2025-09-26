@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
 /* Global tweaks */
-html, body, #root {
-  height: 100%;
-}
+html, body, #root { height: 100%; }
+html { scroll-behavior: smooth; }
 
-/* Smooth scroll for in-page nav */
-html {
-  scroll-behavior: smooth;
+/* Brand polish */
+::selection { background-color: rgba(99,102,241,0.2); }
+
+/**** Optional subtle background texture ****/
+body {
+  background-image:
+    radial-gradient(60rem 40rem at 10% -10%, rgba(99,102,241,0.06), transparent 60%),
+    radial-gradient(60rem 40rem at 110% 10%, rgba(139,92,246,0.05), transparent 60%);
 }

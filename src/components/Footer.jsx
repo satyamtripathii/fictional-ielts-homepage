@@ -1,12 +1,12 @@
 export default function Footer() {
   return (
-    <footer id="contact" className="border-t border-slate-200/60 bg-white">
+    <footer id="contact" className="scroll-mt-24 border-t border-slate-200/60 bg-white">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2">
               <span className="inline-flex h-8 w-8 items-center justify-center rounded bg-indigo-600 text-white font-semibold">I</span>
-              <span className="text-base font-bold tracking-tight text-slate-900">IELTS Pro</span>
+              <span className="text-base font-bold tracking-tight text-slate-900">Fictional IELTS</span>
             </div>
             <p className="mt-3 text-sm text-slate-600">Professional IELTS coaching with proven results.</p>
           </div>
@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-slate-200 pt-6 text-center text-xs text-slate-500">© {new Date().getFullYear()} IELTS Pro. All rights reserved.</div>
+        <div className="mt-8 border-t border-slate-200 pt-6 text-center text-xs text-slate-500">© {new Date().getFullYear()} Fictional IELTS. All rights reserved.</div>
       </div>
     </footer>
   )

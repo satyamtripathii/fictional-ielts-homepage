@@ -39,23 +39,24 @@ const features = [
   },
 ]
 
+import SectionHeading from './SectionHeading.jsx'
+
 export default function Features() {
   return (
-    <section id="features" className="bg-white">
+    <section id="features" className="scroll-mt-24 bg-white">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Programs & Features</h2>
-          <p className="mt-3 text-slate-600">Designed for faster progress and real-world exam readiness.</p>
-        </div>
+        <SectionHeading title="Programs & Features" subtitle="Designed for faster progress and real-world exam readiness." />
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
-            <div key={f.title} className="group rounded-2xl border border-slate-200 p-6 shadow-sm transition hover:shadow-md">
-              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 text-white">
-                {f.icon}
+            <div key={f.title} className="rounded-2xl bg-gradient-to-br from-slate-100 to-indigo-100 p-[1px]">
+              <div className="group h-full rounded-2xl bg-white p-6 shadow-sm transition hover:shadow-md">
+                <div className="mb-4 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-indigo-600/90 text-white ring-4 ring-indigo-100">
+                  <span aria-hidden="true" className="block h-6 w-6">{f.icon}</span>
+                </div>
+                <h3 className="text-lg font-semibold text-slate-900">{f.title}</h3>
+                <p className="mt-2 text-sm text-slate-600">{f.desc}</p>
+                <div className="mt-4 text-sm font-medium text-indigo-600 opacity-0 transition group-hover:opacity-100">Learn more →</div>
               </div>
-              <h3 className="text-lg font-semibold text-slate-900">{f.title}</h3>
-              <p className="mt-2 text-sm text-slate-600">{f.desc}</p>
-              <div className="mt-4 text-sm font-medium text-indigo-600 opacity-0 transition group-hover:opacity-100">Learn more →</div>
             </div>
           ))}
         </div>
