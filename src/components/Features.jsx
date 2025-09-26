@@ -1,0 +1,65 @@
+const features = [
+  {
+    title: 'Speaking Practice',
+    desc: 'Daily 1:1 sessions with certified trainers and instant feedback.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+        <path d="M8.25 3v1.5H6.75A2.25 2.25 0 0 0 4.5 6.75v3a2.25 2.25 0 0 0 2.25 2.25h1.5V13.5H6a3.75 3.75 0 0 1-3.75-3.75v-3A3.75 3.75 0 0 1 6 3h2.25Z"/>
+        <path d="M15.75 3v1.5H18a3.75 3.75 0 0 1 3.75 3.75v3A3.75 3.75 0 0 1 18 15h-2.25v1.5H18A5.25 5.25 0 0 0 23.25 11.25v-3A5.25 5.25 0 0 0 18 3h-2.25Z"/>
+        <path d="M8.25 9.75h7.5v4.5a3.75 3.75 0 1 1-7.5 0v-4.5Z"/>
+      </svg>
+    ),
+  },
+  {
+    title: 'Mock Tests',
+    desc: 'Weekly full-length tests simulating the latest exam pattern.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+        <path fillRule="evenodd" d="M4.5 3.75A.75.75 0 0 1 5.25 3h13.5a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.22.57L12 16.56l-6.28 5.01A.75.75 0 0 1 4.5 21V3.75Z" clipRule="evenodd" />
+      </svg>
+    ),
+  },
+  {
+    title: 'AI Band Score',
+    desc: 'Real-time band predictions and actionable insights for improvement.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+        <path d="M12 3a9 9 0 1 0 9 9h-9V3Z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Flexible Batches',
+    desc: 'Morning, evening, and weekend options available for all learners.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+        <path fillRule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v6.439l4.5-4.5a.75.75 0 1 1 1.06 1.061l-6 6a.75.75 0 0 1-1.06 0l-6-6A.75.75 0 0 1 6.75 4.94l4.5 4.5V3a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+      </svg>
+    ),
+  },
+]
+
+export default function Features() {
+  return (
+    <section id="features" className="bg-white">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Programs & Features</h2>
+          <p className="mt-3 text-slate-600">Designed for faster progress and real-world exam readiness.</p>
+        </div>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {features.map((f) => (
+            <div key={f.title} className="group rounded-2xl border border-slate-200 p-6 shadow-sm transition hover:shadow-md">
+              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 text-white">
+                {f.icon}
+              </div>
+              <h3 className="text-lg font-semibold text-slate-900">{f.title}</h3>
+              <p className="mt-2 text-sm text-slate-600">{f.desc}</p>
+              <div className="mt-4 text-sm font-medium text-indigo-600 opacity-0 transition group-hover:opacity-100">Learn more →</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
