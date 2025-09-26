@@ -4,7 +4,7 @@ A modern, responsive landing page for a fictional IELTS coaching institute. Buil
 
 ## Repo
 
-- GitHub: https://github.com/your-username/fictional-ielts-homepage (replace after pushing)
+- GitHub: https://github.com/satyamtripathii/fictional-ielts-homepage
 
 ## Getting Started
 
