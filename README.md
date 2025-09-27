@@ -68,7 +68,7 @@ git init -b main
 git add .
 git commit -m "chore: initial React + Tailwind scaffold and homepage UI"
 # create an empty GitHub repo first, then set the remote:
-# git remote add origin https://github.com/<your-username>/fictional-ielts-homepage.git
+# git remote add origin https://github.com/satyamtripathii/fictional-ielts-homepage.git
 # git push -u origin main
 ```
 
